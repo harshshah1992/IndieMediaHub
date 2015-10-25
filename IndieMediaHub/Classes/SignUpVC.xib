@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+        </mutableArray>
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC">
+            <connections>
+                <outlet property="signupScrollView" destination="Kzi-fK-brh" id="agB-Lq-S2q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="splash_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="uzq-cv-ccZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kzi-fK-brh" customClass="CustomScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0k-2i-HYm">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lf3-mr-mnS">
+                                    <rect key="frame" x="77" y="39" width="166" height="125"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="166" id="3cF-aM-0Gf"/>
+                                        <constraint firstAttribute="height" constant="125" id="lAU-cl-HnZ"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.38431372549999998" green="0.60392156860000001" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="640" id="FcQ-Ot-ezA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.25070482249999998" blue="0.3136560672" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="h0k-2i-HYm" firstAttribute="leading" secondItem="Kzi-fK-brh" secondAttribute="leading" id="9sK-db-ew7"/>
+                        <constraint firstItem="h0k-2i-HYm" firstAttribute="leading" secondItem="Kzi-fK-brh" secondAttribute="leading" id="gyd-CO-3RL"/>
+                        <constraint firstAttribute="trailing" secondItem="h0k-2i-HYm" secondAttribute="trailing" id="jnP-0g-zD7"/>
+                        <constraint firstAttribute="trailing" secondItem="h0k-2i-HYm" secondAttribute="trailing" id="k9N-UI-ra8"/>
+                        <constraint firstItem="h0k-2i-HYm" firstAttribute="top" secondItem="Kzi-fK-brh" secondAttribute="top" id="w6O-zg-O4D"/>
+                        <constraint firstItem="h0k-2i-HYm" firstAttribute="top" secondItem="Kzi-fK-brh" secondAttribute="top" id="zNI-kf-Scr"/>
+                    </constraints>
+                </scrollView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="71N-YB-qAe">
+                    <rect key="frame" x="30" y="189" width="17" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="2T8-2d-2AK"/>
+                        <constraint firstAttribute="width" constant="17" id="yyH-A7-1EQ"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Mr-cJ-rbB">
+                    <rect key="frame" x="55" y="183" width="235" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gag-rP-eXs">
+                    <rect key="frame" x="30" y="217" width="260" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" image="mail.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ggk-M3-JRV">
+                    <rect key="frame" x="30" y="237" width="16" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="f1k-bv-UY6"/>
+                        <constraint firstAttribute="width" constant="16" id="zPN-So-yPM"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="64W-Dd-Nxh">
+                    <rect key="frame" x="30" y="268" width="260" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Id" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Spp-HU-BPF">
+                    <rect key="frame" x="55" y="228" width="235" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" image="password.png" translatesAutoresizingMaskIntoConstraints="NO" id="IiE-FL-95e">
+                    <rect key="frame" x="30" y="284" width="13" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="7ZR-Da-qza"/>
+                        <constraint firstAttribute="width" constant="13" id="l6V-sb-HxX"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2QA-nI-eXl">
+                    <rect key="frame" x="30" y="318" width="260" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3A-M4-Qyr">
+                    <rect key="frame" x="55" y="277" width="235" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" image="password.png" translatesAutoresizingMaskIntoConstraints="NO" id="eFW-2g-fgx">
+                    <rect key="frame" x="30" y="335" width="13" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="a63-7g-bfL"/>
+                        <constraint firstAttribute="width" constant="13" id="oex-za-euV"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRr-Ko-byJ">
+                    <rect key="frame" x="30" y="368" width="260" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirm Password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UBB-nA-nqo">
+                    <rect key="frame" x="55" y="328" width="235" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" image="password.png" translatesAutoresizingMaskIntoConstraints="NO" id="b94-VS-hCY">
+                    <rect key="frame" x="30" y="385" width="13" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="bBK-lh-4Yf"/>
+                        <constraint firstAttribute="width" constant="13" id="fia-ri-Sf1"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Date Of Birth" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vET-v6-Ruq">
+                    <rect key="frame" x="55" y="378" width="235" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2R-L4-mtP" customClass="CustomButton">
+                    <rect key="frame" x="30" y="465" width="260" height="30"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                    <state key="normal" title="Register">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh3-B7-rOW">
+                    <rect key="frame" x="30" y="513" width="260" height="30"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                    <state key="normal" title="Already have an account ? Signin">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2QA-nI-eXl" secondAttribute="trailing" constant="30" id="0FU-Sk-fvz"/>
+                <constraint firstItem="eFW-2g-fgx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="0YI-vP-y1p"/>
+                <constraint firstItem="Ggk-M3-JRV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="0cp-K1-7d3"/>
+                <constraint firstItem="sh3-B7-rOW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="2NY-bM-te2"/>
+                <constraint firstItem="uzq-cv-ccZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7uB-nS-V77"/>
+                <constraint firstAttribute="bottom" secondItem="uzq-cv-ccZ" secondAttribute="bottom" id="8qY-fd-ES1"/>
+                <constraint firstItem="oRr-Ko-byJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="BRX-jU-rDd"/>
+                <constraint firstItem="Kzi-fK-brh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DBR-oS-IuB"/>
+                <constraint firstAttribute="trailing" secondItem="64W-Dd-Nxh" secondAttribute="trailing" constant="30" id="Jy8-3g-Few"/>
+                <constraint firstAttribute="trailing" secondItem="Kzi-fK-brh" secondAttribute="trailing" id="M6D-Uh-3MC"/>
+                <constraint firstItem="uzq-cv-ccZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MFi-cO-anA"/>
+                <constraint firstItem="Gag-rP-eXs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Sms-tX-di0"/>
+                <constraint firstItem="64W-Dd-Nxh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="UKi-2E-7DL"/>
+                <constraint firstAttribute="trailing" secondItem="N2R-L4-mtP" secondAttribute="trailing" constant="30" id="WyE-hE-Sfc"/>
+                <constraint firstItem="71N-YB-qAe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="YLM-9f-BdS"/>
+                <constraint firstAttribute="trailing" secondItem="Gag-rP-eXs" secondAttribute="trailing" constant="30" id="Z47-LP-JLm"/>
+                <constraint firstAttribute="trailing" secondItem="uzq-cv-ccZ" secondAttribute="trailing" id="Zzx-jy-j7Q"/>
+                <constraint firstItem="IiE-FL-95e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="f92-5L-TV9"/>
+                <constraint firstAttribute="trailing" secondItem="sh3-B7-rOW" secondAttribute="trailing" constant="30" id="lra-3l-BGm"/>
+                <constraint firstAttribute="trailing" secondItem="oRr-Ko-byJ" secondAttribute="trailing" constant="30" id="mdi-KW-hUl"/>
+                <constraint firstItem="b94-VS-hCY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="mnh-3B-50W"/>
+                <constraint firstItem="2QA-nI-eXl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="rA5-V9-Gnj"/>
+                <constraint firstItem="N2R-L4-mtP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="uaZ-DB-lKp"/>
+                <constraint firstItem="Kzi-fK-brh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zZK-pj-lYf"/>
+            </constraints>
+            <point key="canvasLocation" x="238" y="312"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo.png" width="166" height="186"/>
+        <image name="mail.png" width="16" height="12"/>
+        <image name="password.png" width="13" height="16"/>
+        <image name="splash_bg.png" width="320" height="568"/>
+        <image name="user.png" width="17" height="16"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

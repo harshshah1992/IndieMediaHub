@@ -1,0 +1,47 @@
+//
+//  PrefixHeader.pch
+//  IndieMediaHub
+//
+//  Created by harsh on 14/10/15.
+//  Copyright (c) 2015 harsh. All rights reserved.
+//
+
+#import <Availability.h>
+#ifndef IndieMediaHub_PrefixHeader_pch
+#define IndieMediaHub_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "CustomConstants.h"
+#import "CustomControls.h"
+#import "AppDelegate.h"
+#import "CustomUtility.h"
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "WSHelper.h"
+#import <Social/Social.h>
+#import <Accounts/Accounts.h>
+#import <CoreLocation/CoreLocation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "HBImagePicker.h"
+#import "HBContactsFetch.h"
+#import "HBValidations.h"
+#import "HBCommunicationHandler.h"
+#import "HBWebBrowser.h"
+#import "CustomLocalization.h"
+#import "MVYSideMenuOptions.h"
+#import "MVYSideMenuController.h"
+#import "EDStarRating.h"
+
+
+
+
+#define appDelegate (AppDelegate *)[[UIApplication sharedApplication] delegate]
+#endif
